@@ -31,7 +31,6 @@ def generate_page(from_path, template_path, dest_path):
     #template_content = template_content.replace("{{ Title }}", title)
     #page_content = template_content.replace("{{ Content }}", html) 
     
-
     # Replace placeholders in the template
     page_content = template_content.replace("{{ Title }}", title).replace("{{ Content }}", html)
     page_content= page_content.replace('href=/"', 'href="{basepath}').replace('src=/"', 'src="{basepath}') 
